@@ -173,5 +173,5 @@ def main(word_length, num_words_suggest):
 if __name__ == '__main__':
 	
 	word_length = 5
-	num_words_suggest = 2 # needs to be 2 or 3
+	num_words_suggest = 2 # needs to be 2 or 3. Will add error handling later.
 	main(word_length, num_words_suggest)
