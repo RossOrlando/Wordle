@@ -26,7 +26,7 @@ def letter_positions(words_list, word_length):
 	"""
 	Loop through all words and track location of letters by position using a dictionary.
 	Keys = integers of each position in word_length
-	Values = list of allocted letters with total length equal to number of words in words_list
+	Values = list of allocated letters with total length equal to number of words in words_list
 	"""
 	dictionary = {key: [].copy() for key in list(range(word_length))}
 	
@@ -126,7 +126,7 @@ def efficiency_algorithm(word_length, words_list, num_words_suggest, dict_letter
 	Find combinations of words with which to start the game
 	These words must have letters that match the most common letters in each letter slot
 	Ideally we would only need the top few letters in each position, so we start with 3
-	In reality, will likely need several more (depending on word_length and num_words_suggest), so slowly increment until combinations are found
+	In reality, will likely need several more (depending on num_words_suggest), so slowly increment until combinations are found
 	"""
 	num_top_letters = 3
 	found_combos = False
