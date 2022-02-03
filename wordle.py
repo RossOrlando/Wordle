@@ -174,7 +174,8 @@ if __name__ == '__main__':
 	
 	word_length = 5
 	
-	num_words_suggest = "Hi"
+	# must take a value of 2 or 3
+	num_words_suggest = 2 
 
 	if num_words_suggest not in (2,3):
 		raise ValueError("Number of suggested words must be 2 or 3")
